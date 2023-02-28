@@ -1,0 +1,210 @@
+/* Estilos gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 90px;
+  background-image: linear-gradient(
+    to right,
+    rgba(110, 172, 228, 0.5),
+    rgb(0, 98, 196),
+    rgba(0, 0, 0, 0.05)
+  );
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 1.5vh;
+}
+
+nav ul {
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  margin: 25px;
+  color: white;
+}
+
+nav a:hover {
+  color: #d7353b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilos da página */
+.page {
+  width: 210mm; /* Largura da página A4 em milímetros */
+  height: 350mm; /* Altura da página A4 em milímetros */
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 20mm; /* Margem interna da página em milímetros */
+
+}
+
+.page h1 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: rgb(0, 98, 196);
+  text-shadow: 1px 1px 1px white;
+}
+
+.name {
+  font-size: 25px;
+}
+.dados {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+
+.dados a {
+  color: black;
+}
+
+.dados a:hover {
+  color: brown;
+  text-decoration: none;
+}
+.logo {
+  width: 20px;
+}
+
+.perfil {
+  height: 150px;
+  width: 150px;
+}
+
+.dados p {
+  margin-left: 40px;
+}
+
+img {
+  border-radius: 200vh;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  width: 120px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  background-image: linear-gradient(
+    to right,
+    rgba(110, 172, 228, 0.5),
+    rgb(0, 98, 196),
+    rgba(0, 0, 0, 0.05)
+  );
+}
+
+footer img {
+  width: 20px;
+}
+
+.ig {
+  color: #fff;
+}
+
+.ig:hover {
+  color: aquamarine;
+  text-decoration: none;
+}
+
+i {
+  color: brown;
+}
+
+.experiencia ul label {
+  margin: 0;
+}
+
+@media only screen and (max-width: 375px) {
+  /* Estilos para iPhone 12 */
+  header {
+    height: 60px;
+  }
+
+  nav ul {
+    font-size: 22px;
+  }
+
+  nav ul li a {
+    margin: 15px;
+  }
+
+  .page {
+    width: 300px;
+    margin-top: 150px;
+    padding: 15mm;
+  }
+
+  .perfil {
+    height: 100px;
+    width: 100px;
+  }
+
+  img {
+    width: 80px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  footer {
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  footer img {
+    width: 15px;
+  }
+
+  .name {
+    font-size: 20px;
+  }
+
+  .dados p {
+    margin-left: 20px;
+  }
+}
